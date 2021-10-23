@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>MMO Fury</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/fav-ic.png" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+</head>
+
+<body class="main">
+    <img class="homepage-banner desktop" src="img/homepage-banner.png" />
+    <img class="homepage-banner mobile" src="img/homepage-banner-mobile.png" />
+    <div class="mobile-nav mobile">
+        <input type='checkbox' id='toggle' style='display:none;' />
+        <label class='toggle-btn toggle-btn__cross' for='toggle'>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </label>
+        <nav>
+            <ul>
+                <li><a href="#">Catalogue</a></li>
+                <li><a href="#">sell WoW Account</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Account</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="wrap" id="butter">
+        <div class="top-nav mobile d-flex justify-content-end align-items-center pe-4">
+            <a class="me-4 d-flex align-items-center" href="">
+                <svg class="me-2" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.2" d="M10.0001 0.769287C8.1328 0.769304 6.30946 1.33561 4.77074 2.39343C3.23203 3.45125 2.0503 4.95086 1.38157 6.69426C0.712844 8.43766 0.588563 10.3429 1.02514 12.1584C1.46171 13.9739 2.43861 15.6143 3.82687 16.863V16.8629C4.40604 15.7235 5.28936 14.7667 6.37895 14.0984C7.46855 13.4302 8.72187 13.0766 10.0001 13.077C9.23936 13.077 8.49575 12.8514 7.86325 12.4288C7.23075 12.0062 6.73778 11.4055 6.44668 10.7027C6.15557 9.99989 6.0794 9.22656 6.22781 8.48048C6.37621 7.7344 6.74252 7.04908 7.28042 6.51118C7.81831 5.97329 8.50363 5.60698 9.24971 5.45857C9.99579 5.31017 10.7691 5.38634 11.4719 5.67744C12.1747 5.96855 12.7754 6.46152 13.198 7.09402C13.6206 7.72651 13.8462 8.47013 13.8462 9.23083C13.8462 10.2509 13.441 11.2292 12.7197 11.9505C11.9984 12.6718 11.0201 13.077 10.0001 13.077C11.2782 13.0766 12.5316 13.4302 13.6212 14.0984C14.7108 14.7667 15.5941 15.7235 16.1732 16.8629C17.5615 15.6142 18.5384 13.9738 18.975 12.1583C19.4116 10.3428 19.2873 8.43759 18.6185 6.6942C17.9498 4.9508 16.7681 3.45121 15.2294 2.3934C13.6907 1.33558 11.8673 0.769291 10.0001 0.769287Z" fill="#2B80FF" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10 1.53846C5.32682 1.53846 1.53846 5.32682 1.53846 10C1.53846 14.6732 5.32682 18.4615 10 18.4615C14.6732 18.4615 18.4615 14.6732 18.4615 10C18.4615 5.32682 14.6732 1.53846 10 1.53846ZM0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10Z" fill="#2B80FF" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99996 6.15385C8.30063 6.15385 6.92304 7.53143 6.92304 9.23077C6.92304 10.9301 8.30063 12.3077 9.99996 12.3077C11.6993 12.3077 13.0769 10.9301 13.0769 9.23077C13.0769 7.53143 11.6993 6.15385 9.99996 6.15385ZM5.38458 9.23077C5.38458 6.68176 7.45096 4.61538 9.99996 4.61538C12.549 4.61538 14.6153 6.68176 14.6153 9.23077C14.6153 11.7798 12.549 13.8462 9.99996 13.8462C7.45096 13.8462 5.38458 11.7798 5.38458 9.23077Z" fill="#2B80FF" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99996 13.8462C8.86381 13.8462 7.74997 14.1606 6.78146 14.7545C5.81294 15.3485 5.02768 16.1989 4.51261 17.2116C4.32001 17.5903 3.8569 17.7411 3.47823 17.5485C3.09957 17.3559 2.94873 16.8928 3.14133 16.5142C3.78512 15.2484 4.7666 14.1855 5.97714 13.4431C7.18768 12.7007 8.5799 12.3077 9.99996 12.3077C11.42 12.3077 12.8126 12.7006 14.0231 13.4431C15.2336 14.1855 16.2151 15.2484 16.8589 16.5141C17.0515 16.8928 16.9007 17.3559 16.522 17.5485C16.1434 17.7411 15.6803 17.5903 15.4877 17.2116C14.9726 16.1989 14.1873 15.3485 13.2188 14.7545C12.2503 14.1605 11.1361 13.8462 9.99996 13.8462Z" fill="#2B80FF" />
+                </svg>
+                <span>ACCOUNT</span>
+            </a>
+            <div class="dropdown">
+                <a class=" dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-mdb-toggle="dropdown" aria-expanded="false">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.9997 14.3571C19.642 13.0313 19.9834 11.5799 19.9994 10.1069C20.0155 8.63378 19.7058 7.17535 19.0925 5.8359C18.4792 4.49645 17.5775 3.30907 16.4519 2.3587C15.3263 1.40833 14.0045 0.718454 12.5812 0.338418C12.5639 0.333019 12.5464 0.328371 12.5287 0.324192C10.9673 -0.0835742 9.33029 -0.107031 7.75779 0.255828C6.18529 0.618687 4.7241 1.35706 3.49919 2.40779C3.45233 2.44031 3.40926 2.47798 3.37078 2.5201C1.8513 3.86493 0.777112 5.64039 0.291027 7.61045C-0.195059 9.58051 -0.0700202 11.6519 0.64952 13.5491C1.36906 15.4464 2.64902 17.0798 4.31925 18.2321C5.98948 19.3843 7.97086 20.001 10 20C10.0708 20 10.1412 19.9988 10.2117 19.9973C10.2134 19.9973 10.2151 19.9976 10.2168 19.9976C10.2202 19.9976 10.2234 19.9972 10.2268 19.9971C12.0429 19.9543 13.8131 19.4181 15.3478 18.4461C16.8825 17.4741 18.1238 16.1029 18.9388 14.4793L18.9402 14.4773C18.9635 14.439 18.9834 14.3988 18.9997 14.3571ZM18.4615 10C18.4624 11.0081 18.2823 12.0081 17.9297 12.9526L13.4681 10.2085C13.2853 10.0957 13.0807 10.0228 12.8678 9.99437L10.6737 9.69858C10.3916 9.662 10.1049 9.70379 9.84508 9.81937C9.5852 9.93495 9.36217 10.1199 9.20044 10.3538H8.379L8.01316 9.59802C7.91188 9.38702 7.7635 9.20209 7.57945 9.05751C7.3954 8.91292 7.1806 8.81253 6.95162 8.76409L6.32014 8.6284L6.76044 7.58311H8.81291C9.07302 7.58297 9.32886 7.51701 9.5566 7.39136L10.7338 6.74129C10.8374 6.68406 10.9341 6.61509 11.0219 6.53574L13.6095 4.19556C13.8325 3.99537 13.9918 3.73405 14.0676 3.44407C14.1434 3.1541 14.1323 2.84825 14.0358 2.56451C15.3738 3.2915 16.4911 4.36581 17.27 5.67435C18.0488 6.98288 18.4605 8.47721 18.4615 10ZM1.53846 10C1.53696 8.67477 1.84867 7.36794 2.44817 6.18606L3.45041 8.86109C3.54039 9.1029 3.68998 9.31806 3.88532 9.48661C4.08066 9.65517 4.3154 9.77165 4.56778 9.82526L5.09784 9.9392L5.10221 9.94014L6.62832 10.2682L6.99425 11.0241C7.12102 11.2836 7.31792 11.5025 7.56266 11.656C7.80739 11.8094 8.09019 11.8913 8.37905 11.8923H8.48567L7.74574 13.5526C7.62302 13.8275 7.58372 14.1323 7.63271 14.4293C7.68171 14.7263 7.81684 15.0024 8.02134 15.2233L9.82896 17.1785L9.5828 18.4512C7.41443 18.3416 5.37088 17.4037 3.87397 15.8311C2.37706 14.2584 1.54104 12.1711 1.53846 10Z" fill="#2B80FF" />
+                    </svg>
+                    <span>US ($)</span>
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">EU (€)</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="header">
+            <div class="mobile-nav mobile">
+                <a href="index.html"><img src="img/Logo.gif" /> </a>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-dark pt-sm-4">
+                <div class="container">
+                    <!-- Collapsible wrapper -->
+                    <div class="collapse navbar-collapse align-items-start" id="navbarSupportedContent">
+                        <!-- Navbar brand -->
+                        <a class="navbar-brand mt-2 mt-lg-0 me-sm-5" href="index.html">
+                            <img src="img/Logo.gif" alt="" loading="lazy" />
+                        </a>
+                        <!-- Left links -->
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pt-sm-4">
+                            <li class="nav-item dropdown me-3">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                                    <span>Catalogue</span>
+                                    <svg class="me-4 ms-2" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0)">
+                                            <path d="M7.24758 11.4902C6.99667 11.4902 6.7458 11.3944 6.5545 11.2032L0.534818 5.18341C0.151887 4.80048 0.151887 4.17962 0.534818 3.79685C0.917593 3.41407 1.53833 3.41407 1.92129 3.79685L7.24758 9.12345L12.5739 3.79703C12.9568 3.41426 13.5775 3.41426 13.9603 3.79703C14.3434 4.17981 14.3434 4.80066 13.9603 5.1836L7.94066 11.2033C7.74927 11.3946 7.4984 11.4902 7.24758 11.4902Z" fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0">
+                                                <rect width="14" height="14" fill="white" transform="translate(0.24762 0.5)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Cat 1</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item me-3"><a class="nav-link" href="#"><span class="me-4">sell WoW Account</span></a></li>
+                            <li class="nav-item me-3"><a class="nav-link" href="#"><span class="me-4">Reviews</span></a></li>
+                            <li class="nav-item me-3"><a class="nav-link" href="#"><span class="me-4">FAQs</span></a></li>
+                            <li class="nav-item me-3"><a class="nav-link" href="#"><span class="me-4">Contact Us</span></a></li>
+                            <li class="nav-item me-3">
+                                <a class="nav-link d-flex align-items-center" href="#">
+                                    <svg class="me-2" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path opacity="0.2" d="M10.0001 0.769287C8.1328 0.769304 6.30946 1.33561 4.77074 2.39343C3.23203 3.45125 2.0503 4.95086 1.38157 6.69426C0.712844 8.43766 0.588563 10.3429 1.02514 12.1584C1.46171 13.9739 2.43861 15.6143 3.82687 16.863V16.8629C4.40604 15.7235 5.28936 14.7667 6.37895 14.0984C7.46855 13.4302 8.72187 13.0766 10.0001 13.077C9.23936 13.077 8.49575 12.8514 7.86325 12.4288C7.23075 12.0062 6.73778 11.4055 6.44668 10.7027C6.15557 9.99989 6.0794 9.22656 6.22781 8.48048C6.37621 7.7344 6.74252 7.04908 7.28042 6.51118C7.81831 5.97329 8.50363 5.60698 9.24971 5.45857C9.99579 5.31017 10.7691 5.38634 11.4719 5.67744C12.1747 5.96855 12.7754 6.46152 13.198 7.09402C13.6206 7.72651 13.8462 8.47013 13.8462 9.23083C13.8462 10.2509 13.441 11.2292 12.7197 11.9505C11.9984 12.6718 11.0201 13.077 10.0001 13.077C11.2782 13.0766 12.5316 13.4302 13.6212 14.0984C14.7108 14.7667 15.5941 15.7235 16.1732 16.8629C17.5615 15.6142 18.5384 13.9738 18.975 12.1583C19.4116 10.3428 19.2873 8.43759 18.6185 6.6942C17.9498 4.9508 16.7681 3.45121 15.2294 2.3934C13.6907 1.33558 11.8673 0.769291 10.0001 0.769287Z" fill="#2B80FF" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 1.53846C5.32682 1.53846 1.53846 5.32682 1.53846 10C1.53846 14.6732 5.32682 18.4615 10 18.4615C14.6732 18.4615 18.4615 14.6732 18.4615 10C18.4615 5.32682 14.6732 1.53846 10 1.53846ZM0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10Z" fill="#2B80FF" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99996 6.15385C8.30063 6.15385 6.92304 7.53143 6.92304 9.23077C6.92304 10.9301 8.30063 12.3077 9.99996 12.3077C11.6993 12.3077 13.0769 10.9301 13.0769 9.23077C13.0769 7.53143 11.6993 6.15385 9.99996 6.15385ZM5.38458 9.23077C5.38458 6.68176 7.45096 4.61538 9.99996 4.61538C12.549 4.61538 14.6153 6.68176 14.6153 9.23077C14.6153 11.7798 12.549 13.8462 9.99996 13.8462C7.45096 13.8462 5.38458 11.7798 5.38458 9.23077Z" fill="#2B80FF" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99996 13.8462C8.86381 13.8462 7.74997 14.1606 6.78146 14.7545C5.81294 15.3485 5.02768 16.1989 4.51261 17.2116C4.32001 17.5903 3.8569 17.7411 3.47823 17.5485C3.09957 17.3559 2.94873 16.8928 3.14133 16.5142C3.78512 15.2484 4.7666 14.1855 5.97714 13.4431C7.18768 12.7007 8.5799 12.3077 9.99996 12.3077C11.42 12.3077 12.8126 12.7006 14.0231 13.4431C15.2336 14.1855 16.2151 15.2484 16.8589 16.5141C17.0515 16.8928 16.9007 17.3559 16.522 17.5485C16.1434 17.7411 15.6803 17.5903 15.4877 17.2116C14.9726 16.1989 14.1873 15.3485 13.2188 14.7545C12.2503 14.1605 11.1361 13.8462 9.99996 13.8462Z" fill="#2B80FF" />
+                                    </svg>
+                                    <span>ACCOUNT</span>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown me-3">
+                                <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="navbarDropdownMenuLink" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                                    <svg class="me-2" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18.9997 14.3571C19.642 13.0313 19.9834 11.5799 19.9994 10.1069C20.0155 8.63378 19.7058 7.17535 19.0925 5.8359C18.4792 4.49645 17.5775 3.30907 16.4519 2.3587C15.3263 1.40833 14.0045 0.718454 12.5812 0.338418C12.5639 0.333019 12.5464 0.328371 12.5287 0.324192C10.9673 -0.0835742 9.33029 -0.107031 7.75779 0.255828C6.18529 0.618687 4.7241 1.35706 3.49919 2.40779C3.45233 2.44031 3.40926 2.47798 3.37078 2.5201C1.8513 3.86493 0.777112 5.64039 0.291027 7.61045C-0.195059 9.58051 -0.0700202 11.6519 0.64952 13.5491C1.36906 15.4464 2.64902 17.0798 4.31925 18.2321C5.98948 19.3843 7.97086 20.001 10 20C10.0708 20 10.1412 19.9988 10.2117 19.9973C10.2134 19.9973 10.2151 19.9976 10.2168 19.9976C10.2202 19.9976 10.2234 19.9972 10.2268 19.9971C12.0429 19.9543 13.8131 19.4181 15.3478 18.4461C16.8825 17.4741 18.1238 16.1029 18.9388 14.4793L18.9402 14.4773C18.9635 14.439 18.9834 14.3988 18.9997 14.3571ZM18.4615 10C18.4624 11.0081 18.2823 12.0081 17.9297 12.9526L13.4681 10.2085C13.2853 10.0957 13.0807 10.0228 12.8678 9.99437L10.6737 9.69858C10.3916 9.662 10.1049 9.70379 9.84508 9.81937C9.5852 9.93495 9.36217 10.1199 9.20044 10.3538H8.379L8.01316 9.59802C7.91188 9.38702 7.7635 9.20209 7.57945 9.05751C7.3954 8.91292 7.1806 8.81253 6.95162 8.76409L6.32014 8.6284L6.76044 7.58311H8.81291C9.07302 7.58297 9.32886 7.51701 9.5566 7.39136L10.7338 6.74129C10.8374 6.68406 10.9341 6.61509 11.0219 6.53574L13.6095 4.19556C13.8325 3.99537 13.9918 3.73405 14.0676 3.44407C14.1434 3.1541 14.1323 2.84825 14.0358 2.56451C15.3738 3.2915 16.4911 4.36581 17.27 5.67435C18.0488 6.98288 18.4605 8.47721 18.4615 10ZM1.53846 10C1.53696 8.67477 1.84867 7.36794 2.44817 6.18606L3.45041 8.86109C3.54039 9.1029 3.68998 9.31806 3.88532 9.48661C4.08066 9.65517 4.3154 9.77165 4.56778 9.82526L5.09784 9.9392L5.10221 9.94014L6.62832 10.2682L6.99425 11.0241C7.12102 11.2836 7.31792 11.5025 7.56266 11.656C7.80739 11.8094 8.09019 11.8913 8.37905 11.8923H8.48567L7.74574 13.5526C7.62302 13.8275 7.58372 14.1323 7.63271 14.4293C7.68171 14.7263 7.81684 15.0024 8.02134 15.2233L9.82896 17.1785L9.5828 18.4512C7.41443 18.3416 5.37088 17.4037 3.87397 15.8311C2.37706 14.2584 1.54104 12.1711 1.53846 10Z" fill="#2B80FF" />
+                                    </svg>
+                                    <span>US ($)</span>
+                                    <svg class="me-4 ms-2" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0)">
+                                            <path d="M7.24758 11.4902C6.99667 11.4902 6.7458 11.3944 6.5545 11.2032L0.534818 5.18341C0.151887 4.80048 0.151887 4.17962 0.534818 3.79685C0.917593 3.41407 1.53833 3.41407 1.92129 3.79685L7.24758 9.12345L12.5739 3.79703C12.9568 3.41426 13.5775 3.41426 13.9603 3.79703C14.3434 4.17981 14.3434 4.80066 13.9603 5.1836L7.94066 11.2033C7.74927 11.3946 7.4984 11.4902 7.24758 11.4902Z" fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0">
+                                                <rect width="14" height="14" fill="white" transform="translate(0.24762 0.5)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Cat 1</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="container banner-content animation-element bounce-down">
+                <div class="row m-0 position-relative banner-desc">
+                    <div class="col-sm-6">
+                        <h5 class="heading-info subject">welcome to MMOFURY</h5>
+                        <h1 class="subject my-3">BUY CHEAP WOW BOOST <br> AND CARRY SERVICES</h1>
+                        <p class="subject">Our boosting teams are the best players from all over the world struggling to
+                            provide our customers with the most flexible service, adapted for customer's
+                            needs, schedule and lead time with best care possible.
+                        </p>
+                        <div class="row m-0 position-relative p-0 desktop">
+                            <h5 class="heading-info-secondary subject mt-5 mb-4">services we provide</h5>
+                            <div class="row m-0 position-relative">
+                                <div class="col-sm-4 p-0 my-2"><a href="">Rank Boosting</a></div>
+                                <div class="col-sm-4 p-0 my-2"><a href="">Unrated Games Boost</a></div>
+                                <div class="col-sm-4 p-0 my-2"><a href="">Mythic + Dungeons</a></div>
+                                <div class="col-sm-4 p-0 my-2"><a href="">Placement Matches</a></div>
+                                <div class="col-sm-4 p-0 my-2"><a href="">Coaching</a></div>
+                                <div class="col-sm-4 p-0 my-2"><a href="">Collectibles</a></div>
+                                <div class="col-sm-4 p-0 my-2"><a href="">Competitive Win Boost</a></div>
+                                <div class="col-sm-4 p-0 my-2"><a href="">Raids</a></div>
+                                <div class="col-sm-4 p-0 my-2"><a href="">Achievements</a></div>
+                            </div>
+                        </div>
+                        <div class="row m-0 position-relative p-0 mobile mt-5">
+                            <div class="row m-0 position-relative">
+                                <div class="col-sm-4 p-0 my-2"><a href="">View All Services</a></div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-character animation-element bounce-up">
+                <img class="subject desktop" src="img/header-character.png" />
+                <img class="subject mobile" src="img/header-character-mobile.png" />
+            </div>
+        </div>
+        <div class="row m-0 position-relative mt-5 games">
+            <section class="games-slider slider p-0 mb-5">
+                <div class="slide">
+                    <div class="slide-content">
+                        <div class="game-single subject"><a href=""><img src="img/game-1.png" /> </a></div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-content">
+                        <div class="game-single subject"><a href=""><img src="img/game-2.png" /> </a></div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-content">
+                        <div class="game-single subject"><a href=""><img src="img/game-3.png" /> </a></div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-content">
+                        <div class="game-single subject"><a href=""><img src="img/game-4.png" /> </a></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="row m-0 position-relative feature-row">
+            <img class="feature-bg " src="img/features-bg.png" />
+            <div class="container">
+                <div class="row m-0 position-realtive features">
+                    <div class="col-sm-6 features-charac animation-element bounce-up">
+                        <img class="subject" src="img/features-charac.png" />
+                    </div>
+                    <div class="col-sm-6">
+                        <h5 class="heading-info">Our Features</h5>
+                        <h1 class="my-3">Enjoy the most delightful<br>gaming experience</h1>
+                        <p class="mb-5">Vivamus vehicula est ligula, vel mollis leo aliquam id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat sem luctus, ultricies augue at, lacinia velit. Phasellus tellus lectus, egestas vitae justo aliquam, tristique dictum lectus.</p>
+                        <div class="row m-0 position-relative mt-5">
+                            <div class="col-sm-4 col-6 mt-5">
+                                <div class="feature-single">
+                                    <img src="img/vpn.svg" />
+                                    <p class="bold color-white mt-4 mb-2">Virtual private network</p>
+                                    <p>Quisque in neque in risus consequat facilisis vel sit amet ex. Donec in scelerisque diam, sit amet molestie lacus.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-6 mt-5">
+                                <div class="feature-single">
+                                    <img src="img/bot.svg" />
+                                    <p class="bold color-white mt-4 mb-2">No Bots</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet arcu placerat sapien.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-6 mt-5">
+                                <div class="feature-single">
+                                    <img src="img/support.svg" />
+                                    <p class="bold color-white mt-4 mb-2">Premium Support</p>
+                                    <p>Fusce accumsan sapien vel tempus commodo. Nullam et elit risus uspendisse.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-6 mt-5">
+                                <div class="feature-single">
+                                    <img src="img/protect.svg" />
+                                    <p class="bold color-white mt-4 mb-2">Buyer’s Protection</p>
+                                    <p>Aliquam bibendum laoreet augue, quis interdum ex ullamcorper sit amet krion.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-6 mt-5">
+                                <div class="feature-single">
+                                    <img src="img/policy.svg" />
+                                    <p class="bold color-white mt-4 mb-2">Refund Policy</p>
+                                    <p>Phasellus faucibus dui quis faucibus mattis. Proin vel sodales urna, at finibus urna. Aliquam imperdiet leo quis.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-6 mt-5">
+                                <div class="feature-single">
+                                    <img src="img/proplayer.svg" />
+                                    <p class="bold color-white mt-4 mb-2">Professional Players</p>
+                                    <p>Pellentesque gravida magna id mi venenatis, vel dictum nisi accumsan.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row m-0 position-relative mt-5 reviews">
+            <img class="reviews-bg" src="img/reviews-bg.png" />
+            <div class="container text-center cont-heading">
+                <h5 class="heading-info">what our customers say</h5>
+                <h1>OUR CUSTOMER REVIEWS</h1>
+                <p>We earned <span class="bold color-white">7500+ positive</span> reviews from our loyal customers for our services</p>
+            </div>
+            <div class="container mt-5">
+                <section class="reviews-slider slider p-0 mb-5">
+                    <div class="slide">
+                        <div class="slide-content">
+                            <div class="review-single d-flex flex-column p-4">
+                                <div class="d-flex mb-4">
+                                    <div class="me-auto">
+                                        <h1>4.5/5</h1>
+                                    </div>
+                                    <div class="ms-auto review-date d-flex align-items-center">
+                                        <p class="mb-0">Posted a day ago</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column review-content">
+                                    <h5 class="bold color-white">Really really happy with the service ...</h5>
+                                    <p>First time using a wow boosting service and I was very hesitant to say the least. I needed help with some raids in order to secure an item for transmog ...</p>
+                                </div>
+                                <div class="flex review-person mt-auto">
+                                    <p class="mb-0 d-flex color-white bold align-items-center">
+                                        <span class="me-2">Steve Muller</span>
+                                        <img src="img/Verified.svg" />
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <div class="review-single d-flex flex-column p-4">
+                                <div class="d-flex mb-4">
+                                    <div class="me-auto">
+                                        <h1>5/5</h1>
+                                    </div>
+                                    <div class="ms-auto review-date d-flex align-items-center">
+                                        <p class="mb-0">18 Sep 2021</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column review-content">
+                                    <h5 class="bold color-white">Honestly best booster I've used to ..</h5>
+                                    <p>Honestly best booster I've used to date. Quick to reply to messages and very quick service with updates along the way.</p>
+                                </div>
+                                <div class="d-flex review-person mt-auto">
+                                    <p class="mb-0 d-flex color-white bold align-items-center">
+                                        <span class="me-2">Jordan</span>
+                                        <img src="img/Verified.svg" />
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <div class="review-single d-flex flex-column p-4">
+                                <div class="d-flex mb-4">
+                                    <div class="me-auto">
+                                        <h1>4.5/5</h1>
+                                    </div>
+                                    <div class="ms-auto review-date d-flex align-items-center">
+                                        <p class="mb-0">4 Aug 2021</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column review-content">
+                                    <h5 class="bold color-white">I’m old customer and I like ...</h5>
+                                    <p>I’m old customer and I like the way you operate but the only one issue the price is little to much as m member in your website always supporting a good ...</p>
+                                </div>
+                                <div class="d-flex review-person mt-auto">
+                                    <p class="mb-0 d-flex color-white bold align-items-center">
+                                        <span class="me-2">Fredrik Rummelhoff</span>
+                                        <img src="img/Verified.svg" />
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <div class="review-single d-flex flex-column p-4">
+                                <div class="d-flex mb-4">
+                                    <div class="me-auto">
+                                        <h1>5/5</h1>
+                                    </div>
+                                    <div class="ms-auto review-date d-flex align-items-center">
+                                        <p class="mb-0">4 Aug 2021</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column review-content">
+                                    <h5 class="bold color-white">Really fast delivery great service</h5>
+                                    <p>Really fast delivery great service, price was cheaper than other sites and easy to order ☺️ would use them again.</p>
+                                </div>
+                                <div class="d-flex review-person mt-auto">
+                                    <p class="mb-0 d-flex color-white bold align-items-center">
+                                        <span class="me-2">LarkaaWolf</span>
+                                        <img src="img/Verified.svg" />
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <div class="review-single d-flex flex-column p-4">
+                                <div class="d-flex mb-4">
+                                    <div class="me-auto">
+                                        <h1>4.5/5</h1>
+                                    </div>
+                                    <div class="ms-auto review-date d-flex align-items-center">
+                                        <p class="mb-0">Posted a day ago</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column review-content">
+                                    <h5 class="bold color-white">Really really happy with the service ...</h5>
+                                    <p>First time using a wow boosting service and I was very hesitant to say the least. I needed help with some raids in order to secure an item for transmog ...</p>
+                                </div>
+                                <div class="flex review-person mt-auto">
+                                    <p class="mb-0 d-flex color-white bold align-items-center">
+                                        <span class="me-2">Steve Muller</span>
+                                        <img src="img/Verified.svg" />
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <div class="review-single d-flex flex-column p-4">
+                                <div class="d-flex mb-4">
+                                    <div class="me-auto">
+                                        <h1>5/5</h1>
+                                    </div>
+                                    <div class="ms-auto review-date d-flex align-items-center">
+                                        <p class="mb-0">18 Sep 2021</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column review-content">
+                                    <h5 class="bold color-white">Honestly best booster I've used to ..</h5>
+                                    <p>Honestly best booster I've used to date. Quick to reply to messages and very quick service with updates along the way.</p>
+                                </div>
+                                <div class="d-flex review-person mt-auto">
+                                    <p class="mb-0 d-flex color-white bold align-items-center">
+                                        <span class="me-2">Jordan</span>
+                                        <img src="img/Verified.svg" />
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <div class="review-single d-flex flex-column p-4">
+                                <div class="d-flex mb-4">
+                                    <div class="me-auto">
+                                        <h1>4.5/5</h1>
+                                    </div>
+                                    <div class="ms-auto review-date d-flex align-items-center">
+                                        <p class="mb-0">4 Aug 2021</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column review-content">
+                                    <h5 class="bold color-white">I’m old customer and I like ...</h5>
+                                    <p>I’m old customer and I like the way you operate but the only one issue the price is little to much as m member in your website always supporting a good ...</p>
+                                </div>
+                                <div class="d-flex review-person mt-auto">
+                                    <p class="mb-0 d-flex color-white bold align-items-center">
+                                        <span class="me-2">Fredrik Rummelhoff</span>
+                                        <img src="img/Verified.svg" />
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <div class="review-single d-flex flex-column p-4">
+                                <div class="d-flex mb-4">
+                                    <div class="me-auto">
+                                        <h1>5/5</h1>
+                                    </div>
+                                    <div class="ms-auto review-date d-flex align-items-center">
+                                        <p class="mb-0">4 Aug 2021</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column review-content">
+                                    <h5 class="bold color-white">Really fast delivery great service</h5>
+                                    <p>Really fast delivery great service, price was cheaper than other sites and easy to order ☺️ would use them again.</p>
+                                </div>
+                                <div class="d-flex review-person mt-auto">
+                                    <p class="mb-0 d-flex color-white bold align-items-center">
+                                        <span class="me-2">LarkaaWolf</span>
+                                        <img src="img/Verified.svg" />
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="container text-center mt-4">
+                <div class="d-flex justify-content-center align-items-center review-brands">
+                    <p class="bold color-white mb-sm-0 mb-4"><span class="">See all reviews on </span></p>
+                    <div>
+                        <img class="ms-sm-4 ms-2" src="img/trustpilot.svg" />
+                        <img class="ms-sm-4 ms-2" src="img/player-auction.svg" />
+                        <img class="ms-sm-4 ms-2" src="img/g2g.svg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row m-0 position-relative animation-element bounce-up discouts">
+            <img class="subject desktop" src="img/discount-banner.svg" />
+            <img class="subject mobile" src="img/discount-banner-mobile.svg" />
+        </div>
+
+        <div class="container ordering mt-5 pt-sm-5">
+            <div class="container text-center cont-heading">
+                <h5 class="heading-info">STEPS FOR ORDERING</h5>
+                <h1>How MMOFURY works</h1>
+                <p>We offer the easiest and most convenient way to earn all possible in-game services. We <br> never stop evolving our boosting service quality.</p>
+            </div>
+            <div class="container text-center video">
+                <img src="img/Video.svg" />
+            </div>
+            <div class="container mt-4">
+                <section class="video-slider slider p-0 mb-5">
+                    <div class="slide">
+                        <div class="slide-content">
+                            <div class="video-single d-flex flex-column p-4">
+                                <h5 class="bold color-white">1. Choose Service</h5>
+                                <p>Choose the services you are interested in and add them to the cart.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <div class="video-single d-flex flex-column p-4">
+                                <h5 class="bold color-white">2. Place Order</h5>
+                                <p>Go to the cart, fill out your contact information, character data and pay for the order.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <div class="video-single d-flex flex-column p-4">
+                                <h5 class="bold color-white">3. Our team contacts you</h5>
+                                <p>We will contact you within 7 minutes of payment to clarify the details of your order.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <div class="video-single d-flex flex-column p-4">
+                                <h5 class="bold color-white">4. We get the job done</h5>
+                                <p>We will immediately start working on your order.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <div class="video-single d-flex flex-column p-4">
+                                <h5 class="bold color-white">5. All done! Leave a review </h5>
+                                <p>Leave feedback about the quality of the service!</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+
+        <div class="row m-0 position-relative faq-row pt-sm-5">
+            <img class="faq-bg" src="img/faq-bg.png" />
+            <div class="faq-charac desktop animation-element bounce-up"><img class="subject" src="img/faq-charac.png" /></div>
+
+            <div class="container mt-5">
+                <h5 class="heading-info">got questions, we’ve got answers</h5>
+                <h1>Frequently asked questions</h1>
+                <p>Find answers to frequently asked questions about how you can get started, <br> boosting and so much more.</p>
+            </div>
+
+            <div class="container mt-5 faq-tabs">
+                <!-- Tabs navs -->
+                <ul class="nav nav-tabs mb-3" id="ex1" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link p-sm-0 pe-sm-4 active" id="ex1-tab-1" data-mdb-toggle="tab" href="#ex1-tabs-1" role="tab" aria-controls="ex1-tabs-1" aria-selected="true">getting started</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link p-sm-0 ps-sm-4 pe-sm-4" id="ex1-tab-2" data-mdb-toggle="tab" href="#ex1-tabs-2" role="tab" aria-controls="ex1-tabs-2" aria-selected="false">boosting related</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link p-sm-0 ps-sm-4 pe-sm-4" id="ex1-tab-3" data-mdb-toggle="tab" href="#ex1-tabs-3" role="tab" aria-controls="ex1-tabs-3" aria-selected="false">Payment related</a>
+                    </li>
+                </ul>
+                <!-- Tabs navs -->
+
+                <!-- Tabs content -->
+                <div class="tab-content mt-5" id="ex1-content">
+                    <div class="tab-pane fade show active" id="ex1-tabs-1" role="tabpanel" aria-labelledby="ex1-tab-1">
+                        <div class="row m-0 position-relative px-0">
+                            <div class="col-sm-8 px-0">
+                                <div class="row m-0 position-relative px-0">
+                                    <div class="col-sm-6 ps-sm-0 pe-sm-5">
+                                        <div class="w-100 FAQ-panel mb-3">
+                                            <button class="collapsible d-flex align-items-center">
+                                                <p class="color-white">Suspendisse vel laoreet lectus ut?</p>
+                                            </button>
+                                            <div class="content mx-0 px-0">
+                                                <p>Vivamus vehicula est ligula, vel mollis leo aliquam id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat sem luctus, ultricies augue at, lacinia velit.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="w-100 FAQ-panel mb-3">
+                                            <button class="collapsible d-flex align-items-center">
+                                                <p class="color-white">Orci varius natoque penatibus et magnis dis parturient montes?</p>
+                                            </button>
+                                            <div class="content mx-0 px-0">
+                                                <p>Vivamus vehicula est ligula, vel mollis leo aliquam id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat sem luctus, ultricies augue at, lacinia velit.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="w-100 FAQ-panel mb-3">
+                                            <button class="collapsible d-flex align-items-center">
+                                                <p class="color-white">Nullam condimentum hendrerit pretium?</p>
+                                            </button>
+                                            <div class="content mx-0 px-0">
+                                                <p>Vivamus vehicula est ligula, vel mollis leo aliquam id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat sem luctus, ultricies augue at, lacinia velit.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="w-100 FAQ-panel mb-3">
+                                            <button class="collapsible d-flex align-items-center">
+                                                <p class="color-white">Cras ante metus, laoreet non dictum sit amet?</p>
+                                            </button>
+                                            <div class="content mx-0 px-0">
+                                                <p>Vivamus vehicula est ligula, vel mollis leo aliquam id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat sem luctus, ultricies augue at, lacinia velit.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 ps-sm-5 desktop">
+                                        <div class="w-100 FAQ-panel mb-3">
+                                            <button class="collapsible d-flex align-items-center">
+                                                <p class="color-white">Vestibulum sodales hendrerit commodoec consectetur congue ultricies?</p>
+                                            </button>
+                                            <div class="content mx-0 px-0">
+                                                <p>Vivamus vehicula est ligula, vel mollis leo aliquam id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat sem luctus, ultricies augue at, lacinia velit.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="w-100 FAQ-panel mb-3">
+                                            <button class="collapsible d-flex align-items-center">
+                                                <p class="color-white">Duis ut ante ultricies enim consectetur maximus sed at nulla?</p>
+                                            </button>
+                                            <div class="content mx-0 px-0">
+                                                <p>Vivamus vehicula est ligula, vel mollis leo aliquam id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat sem luctus, ultricies augue at, lacinia velit.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="w-100 FAQ-panel mb-3">
+                                            <button class="collapsible d-flex align-items-center">
+                                                <p class="color-white">Etiam venenatis eros vel pulvinar molestie?</p>
+                                            </button>
+                                            <div class="content mx-0 px-0">
+                                                <p>Vivamus vehicula est ligula, vel mollis leo aliquam id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat sem luctus, ultricies augue at, lacinia velit.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="w-100 FAQ-panel mb-3">
+                                            <button class="collapsible d-flex align-items-center">
+                                                <p class="color-white">Pellentesque ornare placerat nulla quis feugiat arcu commodo?</p>
+                                            </button>
+                                            <div class="content mx-0 px-0">
+                                                <p>Vivamus vehicula est ligula, vel mollis leo aliquam id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat sem luctus, ultricies augue at, lacinia velit.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="ex1-tabs-2" role="tabpanel" aria-labelledby="ex1-tab-2">
+                        <p class="bold color-white">No data</p>
+                    </div>
+                    <div class="tab-pane fade" id="ex1-tabs-3" role="tabpanel" aria-labelledby="ex1-tab-3">
+                        <p class="bold color-white">No data</p>
+                    </div>
+                </div>
+                <!-- Tabs content -->
+            </div>
+        </div>
+
+
+        <div class="container ps-0 need-help">
+            <div class="row m-0 position-relative">
+                <div class="col-sm-6 help-charac p-0">
+                    <img class="p-0" src="img/help-charac.png" />
+                </div>
+                <div class="col-sm-6 p-sm-5 help-form d-flex flex-column justify-content-center">
+                    <h1>Need Help?</h1>
+                    <p class="py-3">This form is to contact our professional team, if you require an instant reply or guidance then open our live chat.</p>
+
+                    <div class="row m-0 position-relative">
+                        <div class="col-sm-12 mb-5">
+                            <label class="bold color-white mb-3">Select Category</label>
+                            <select class="form-control">
+                                <option>General Question</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-6 mb-5">
+                            <label class="bold color-white mb-3">Full Name</label>
+                            <input type="text" class="form-control" placeholder="Your Full Name" />
+                        </div>
+                        <div class="col-sm-6 mb-4">
+                            <label class="bold color-white mb-3">Email Address</label>
+                            <input type="text" class="form-control" placeholder="Enter Email" />
+                        </div>
+                        <div class="col-sm-12 mb-5">
+                            <label class="bold color-white mb-3">Message</label>
+                            <textarea class="form-control" rowspan="5"></textarea>
+                        </div>
+                        <div class="col-sm-12 social-ic mb-5">
+                            <div class="d-flex form-btn-row align-items-center">
+                                <div class="me-sm-auto">
+                                    <div class="d-flex">
+                                        <p class="d-flex align-items-center me-auto mb-0"><span class="me-sm-3">socialize with us</span></p>
+                                        <div class="ms-auto">
+                                            <a class="mx-2" href="">
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M20 10C20 4.5 15.5 0 10 0C4.5 0 0 4.5 0 10C0 15 3.625 19.125 8.375 19.875V12.875H5.875V10H8.375V7.75C8.375 5.25 9.875 3.875 12.125 3.875C13.25 3.875 14.375 4.125 14.375 4.125V6.625H13.125C11.875 6.625 11.5 7.375 11.5 8.125V10H14.25L13.75 12.875H11.375V20C16.375 19.25 20 15 20 10Z" fill="#8DB9CA" />
+                                                </svg>
+                                            </a>
+                                            <a class="mx-2" href="">
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M8.23997 8.39001C7.66997 8.39001 7.21997 8.89001 7.21997 9.50001C7.21997 10.11 7.67997 10.61 8.23997 10.61C8.80997 10.61 9.25997 10.11 9.25997 9.50001C9.26997 8.89001 8.80997 8.39001 8.23997 8.39001ZM11.89 8.39001C11.32 8.39001 10.87 8.89001 10.87 9.50001C10.87 10.11 11.33 10.61 11.89 10.61C12.46 10.61 12.91 10.11 12.91 9.50001C12.91 8.89001 12.46 8.39001 11.89 8.39001Z" fill="#8DB9CA" />
+                                                    <path d="M16.75 0H3.34999C2.21999 0 1.29999 0.92 1.29999 2.06V15.58C1.29999 16.72 2.21999 17.64 3.34999 17.64H14.69L14.16 15.79L15.44 16.98L16.65 18.1L18.8 20V2.06C18.8 0.92 17.88 0 16.75 0ZM12.89 13.06C12.89 13.06 12.53 12.63 12.23 12.25C13.54 11.88 14.04 11.06 14.04 11.06C13.63 11.33 13.24 11.52 12.89 11.65C12.39 11.86 11.91 12 11.44 12.08C10.48 12.26 9.59999 12.21 8.84999 12.07C8.27999 11.96 7.78999 11.8 7.37999 11.64C7.14999 11.55 6.89999 11.44 6.64999 11.3C6.61999 11.28 6.58999 11.27 6.55999 11.25C6.53999 11.24 6.52999 11.23 6.51999 11.22C6.33999 11.12 6.23999 11.05 6.23999 11.05C6.23999 11.05 6.71999 11.85 7.98999 12.23C7.68999 12.61 7.31999 13.06 7.31999 13.06C5.10999 12.99 4.26999 11.54 4.26999 11.54C4.26999 8.32 5.70999 5.71 5.70999 5.71C7.14999 4.63 8.51999 4.66 8.51999 4.66L8.61999 4.78C6.81999 5.3 5.98999 6.09 5.98999 6.09C5.98999 6.09 6.20999 5.97 6.57999 5.8C7.64999 5.33 8.49999 5.2 8.84999 5.17C8.90999 5.16 8.95999 5.15 9.01999 5.15C9.62999 5.07 10.32 5.05 11.04 5.13C11.99 5.24 13.01 5.52 14.05 6.09C14.05 6.09 13.26 5.34 11.56 4.82L11.7 4.66C11.7 4.66 13.07 4.63 14.51 5.71C14.51 5.71 15.95 8.32 15.95 11.54C15.95 11.54 15.1 12.99 12.89 13.06V13.06Z" fill="#8DB9CA" />
+                                                </svg>
+                                            </a>
+                                            <a class="mx-2" href="">
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M10.092 15.8025C6.72799 15.8025 5.23285 14.0741 5.23285 12.8395C5.23285 12.5926 5.3575 12.2222 5.60669 12.0988C5.85587 11.8519 6.10503 11.8519 6.35421 11.8519C7.72473 11.8519 7.35095 13.9506 10.092 13.9506C11.4625 13.9506 12.2101 13.0864 12.2101 12.3457C12.2101 11.8519 11.9609 11.358 11.0887 11.1111L8.09854 10.3704C5.73128 9.75309 5.35749 8.39506 5.35749 7.28395C5.35749 4.69136 7.72476 3.82716 9.96742 3.82716C11.9609 3.82716 14.4527 4.93827 14.4527 6.41975C14.4527 7.03704 13.9543 7.40741 13.2068 7.40741C11.9609 7.40741 12.2101 5.67901 9.71822 5.67901C8.4723 5.67901 7.84934 6.2963 7.84934 7.03704C7.84934 7.77778 8.84603 8.14815 9.59358 8.2716L11.8363 8.76543C14.2036 9.25926 14.8265 10.7407 14.8265 11.9753C14.8265 14.321 13.2068 15.8025 10.092 15.8025ZM19.3119 11.4815C19.4364 10.9877 19.4364 10.3704 19.4364 9.87654C19.4364 7.16049 18.1905 4.5679 16.0724 2.71605C13.9543 0.864197 11.0887 0.246914 8.34766 0.617284C7.60011 0.246914 6.60343 0 5.60669 0C3.61321 0 1.74429 1.11111 0.747554 2.83951C-0.249185 4.5679 -0.249185 6.66667 0.747554 8.39506C0.249185 11.358 1.1213 14.4444 3.36396 16.6667C5.48203 18.7654 8.59689 19.7531 11.5871 19.2593C12.4593 19.7531 13.3314 20 14.3282 20C16.3216 20 18.1905 18.8889 19.1872 17.1605C20.184 15.3086 20.3086 13.2099 19.3119 11.4815Z" fill="#8DB9CA" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ms-sm-auto text-right">
+                                    <button class="btn">
+                                        <svg class="me-3" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13.9768 7.5656C14.0474 7.47464 14.0821 7.36038 14.0742 7.24499C14.0662 7.1296 14.0162 7.02131 13.9338 6.94114C13.8514 6.86097 13.7425 6.81463 13.6282 6.81112C13.514 6.80762 13.4025 6.84719 13.3154 6.92216L5.04818 14.0386L0.682438 12.3303C0.492523 12.2567 0.327466 12.1296 0.206881 11.9639C0.0862958 11.7982 0.0152526 11.601 0.00219295 11.3957C-0.0108667 11.1904 0.0346061 10.9856 0.133209 10.8057C0.231811 10.6257 0.379398 10.4782 0.55843 10.3806L18.6828 0.108129C18.8252 0.0304941 18.9858 -0.00655031 19.1474 0.00094939C19.3091 0.00844909 19.4656 0.0602115 19.6005 0.150712C19.7353 0.241212 19.8433 0.367054 19.9129 0.514806C19.9826 0.662558 20.0113 0.826675 19.996 0.989642L18.4061 17.7577C18.3902 17.9297 18.3348 18.0955 18.2444 18.242C18.154 18.3885 18.031 18.5117 17.8853 18.6017C17.7396 18.6916 17.5751 18.7459 17.405 18.7603C17.2348 18.7746 17.0637 18.7486 16.9053 18.6842L11.592 16.6027L8.2565 19.7652C8.1334 19.8816 7.97928 19.9589 7.81321 19.9876C7.64714 20.0163 7.47641 19.995 7.32212 19.9266C7.16784 19.8581 7.03677 19.7454 6.94514 19.6024C6.85351 19.4593 6.80533 19.2922 6.80656 19.1218V16.6381L13.9768 7.5656Z" fill="#2B80FF" />
+                                        </svg>
+                                        <span>Send Message</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <footer class="position-relative mt-5 pt-5 px-0">
+            <img class="footer-bg p-0" src="img/footer-bg.png" />
+            <div class="container px-0">
+                <div class="row m-0 position-relative">
+                    <div class="col-sm-6 pe-sm-5 footer-desc">
+                        <p class="mb-4">We cooperate only with qualified and experienced top world players who participate personally in each event and ready to provide you with the best boosting service and gaming experience in your favorite online games. We ensure that every customer is highly satisfied and 100% positive feedback of our work pretty much sums it up. Get the most relevant EU boost and power leveling services from the professional players fast and easy!
+                        </p>
+                        <a href=""><img src="img/Visa.svg" /></a>
+                        <a href=""><img src="img/Mastercard.svg" /></a>
+                        <a href=""><img src="img/Maestro.svg" /></a>
+                        <a href=""><img src="img/Amex.svg" /></a>
+                        <a href=""><img src="img/Discover.svg" /></a>
+                        <a href=""><img src="img/jcb.svg" /></a>
+                        <a href=""><img src="img/Skrill.svg" /></a>
+                        <a href=""><img src="img/Klarna.svg" /></a>
+                        <a href=""><img src="img/Bitcoin.svg" /></a>
+                        <a href=""><img src="img/Ideal.svg" /></a>
+                        <a href=""><img src="img/Giropay.svg" /></a>
+                        <a href=""><img src="img/Alipay.svg" /></a>
+                        <a href=""><img src="img/Wechat.svg" /></a>
+                        <a href=""><img src="img/Webmoney.svg" /></a>
+                        <p class="mt-5 footer-brands">
+                            <a href="" class="me-sm-5 me-3"><img src="img/trustpilot.svg" /></a>
+                            <a href="" class="me-sm-5 me-3"><img src="img/player-auction.svg" /></a>
+                            <a href="" class="me-sm-5 me-3"><img src="img/g2g.svg" /></a>
+                        </p>
+                    </div>
+                    <div class="col-sm-6 footer-links">
+                        <div class="row m-0 position-relative">
+                            <div class="col-sm-4 col-6 mt-sm-0 mt-5">
+                                <h5>information</h5>
+                                <p class="mb-1"><a href="">F.A.Q.</a></p>
+                                <p class="mb-1"><a href="">About us</a></p>
+                                <p class="mb-1"><a href="">Reviews</a></p>
+                                <p class="mb-1"><a href="">Rewards</a></p>
+                                <p class="mb-1"><a href="">Refund Policy</a></p>
+                                <p class="mb-1"><a href="">Terms & Conditions</a></p>
+                                <p class="mb-1"><a href="">Privacy Policy</a></p>
+                                <p class="mb-1"><a href="">Legal Admissibility</a></p>
+                                <p class="mb-1"><a href="">Contact Us</a></p>
+                            </div>
+                            <div class="col-sm-4 col-6 mt-sm-0 mt-5">
+                                <h5>Most Popular</h5>
+                                <p class="mb-1"><a href="">World of Warcraft Classic</a></p>
+                                <p class="mb-1"><a href="">Burning Crusade</a></p>
+                                <p class="mb-1"><a href="">Wrath of the Lich King</a></p>
+                                <p class="mb-1"><a href="">Cataclysm</a></p>
+                                <p class="mb-1"><a href="">Mists of Pandaria</a></p>
+                                <p class="mb-1"><a href="">Warlords of Draenor</a></p>
+                                <p class="mb-1"><a href="">Legion</a></p>
+                                <p class="mb-1"><a href="">Battle for Azeroth</a></p>
+                            </div>
+                            <div class="col-sm-4 col-12 mt-sm-0 mt-5">
+                                <h5>contact US</h5>
+                                <div class="footer-social">
+                                    <p class="mb-3"><a href=""><img class="me-2" src="img/facebook.svg" /><span>Facebook</span></a></p>
+                                    <p class="mb-3"><a href=""><img class="me-2" src="img/Discord%20-%20Negative.svg" /><span>Discord</span></a></p>
+                                    <p class="mb-3"><a href=""><img class="me-2" src="img/skype.svg" /><span>Skype</span></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container px-0 mt-sm-5 mt-3">
+                <div class="d-flex footer-bottom">
+                    <div class="me-sm-auto">
+                        <p class="mb-0">© 2021 MMOFury. All rights reserved.</p>
+                    </div>
+                    <div class="ms-sm-auto text-right">
+                        <p><a href="">Terms of use</a> | <a href="">Privacy Policy</a> </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+    <script type="text/javascript" src="js/butter.js"></script>
+    <!-- Custom scripts -->
+
+    <script>
+        butter.init({
+            wrapperId: 'butter'
+        });
+    </script>
+    <script>
+        butter.init({
+            cancelOnTouch: true
+        });
+    </script>
+    <script>
+        butter.init({
+            wrapperDamper: 0.03
+        });
+    </script>
+    <!-- Custom scripts -->
+
+    <script type="text/javascript">
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+
+    <script>
+        var $animation_elements = $('.animation-element');
+        var $window = $(window);
+
+        function check_if_in_view() {
+            var window_height = $window.height();
+            var window_top_position = $window.scrollTop();
+            var window_bottom_position = (window_top_position + window_height);
+
+            $.each($animation_elements, function() {
+                var $element = $(this);
+                var element_height = $element.outerHeight();
+                var element_top_position = $element.offset().top;
+                var element_bottom_position = (element_top_position + element_height);
+
+                //check to see if this current container is within viewport
+                if ((element_bottom_position >= window_top_position) &&
+                    (element_top_position <= window_bottom_position)) {
+                    $element.addClass('in-view');
+                } else {
+                    $element.removeClass('in-view');
+                }
+            });
+        }
+
+        $window.on('scroll resize', check_if_in_view);
+        $window.trigger('scroll');
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.games-slider').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                centerMode: false,
+                variableWidth: true,
+                autoplay: false,
+                autoplaySpeed: 3500,
+                arrows: true,
+                dots: false,
+                pauseOnHover: false,
+                responsive: [{
+                    breakpoint: 769,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                }, {
+                    breakpoint: 520,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }]
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.reviews-slider').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+
+                autoplay: false,
+                autoplaySpeed: 3500,
+                arrows: false,
+                dots: true,
+                pauseOnHover: false,
+                responsive: [{
+                    breakpoint: 769,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                }, {
+                    breakpoint: 520,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }]
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.video-slider').slick({
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                autoplay: false,
+                autoplaySpeed: 3500,
+                arrows: false,
+                dots: true,
+                pauseOnHover: false,
+                responsive: [{
+                    breakpoint: 769,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                }, {
+                    breakpoint: 520,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }]
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
